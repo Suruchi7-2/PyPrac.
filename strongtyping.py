@@ -42,4 +42,33 @@ class Multi(Add):#Derived class.
 m=Multi()
 m.result(10,20)
 
-#
+class ComplexNumber:
+    def __init__(self, real, imag):
+        self.real = real
+        self.imag = imag
+
+    def __str__(self):
+        return f"{self.real} + {self.imag}j"
+
+    def __add__(self, other):
+        if isinstance(other, ComplexNumber):
+            return ComplexNumber(self.real + other.real, self.imag + other.imag)
+        else:
+            return NotImplemented
+
+    def __sub__(self, other):
+        if isinstance(other, ComplexNumber):
+            return ComplexNumber(self.real - other.real, self.imag - other.imag)
+        else:
+            return NotImplemented
+
+    def __mul__(self, other):
+        if isinstance(other, ComplexNumber):
+            # Complex number multiplication formula
+            real_part = self.real * other.real - self.imag * other.imag
+            imag_part = self.real * other.imag + self.imag * other.real
+            return ComplexNumber(real_part, imag_part)
+        elif isinstance(other, (int, float)):  # Allow multiplication by scalars
+            return ComplexNumber(self.real * other, self.imag * other)
+        else:
+            return NotImplemented
