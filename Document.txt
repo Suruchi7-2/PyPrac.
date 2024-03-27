@@ -1,0 +1,28 @@
+A python class is a group of attribute and methods.
+Attribute is variable.
+Method is function inside class
+Constructor is: def __init__(self, pass parrameter)
+__init__() method is used o initliaze variables.This is soecial method, we don't need to call this method explicitly. as object created, it called
+use self variable whwever using attriibute inside class.
+Object is class type variable or class insatnce.To us eclass, creqate object of class
+INstance creation allot memory neccasry to store actual data of varaible.
+Each time when an object created of a class, variable's copy is created which is define in cass earlier.
+object_name=class_name(arg)//arg is actual argument.actual argu,emt are passed while calling , formal passed while creating
+Example,
+class MObile:
+def __init__(self):
+self.model="Samasung"
+def show_model(self):
+print("MOdel:",self.model)
+samsung=Mobile()
+AS object created a block of memory is allocated on heap, and size of memeory will be 
+equal to the available varibale and methods inside class.
+After allocating memory, speciAL METHOD __init() called internally.it stores data to variable.
+object will have memory location and it gets passed to self because self variable point toward current object.
+use object to access class variabe and method.
+like: object.varname
+object.classmethod()
+
+Self is default variable and it will have memeory adress of current object.
+This variable is used to reefr all instance variable and method.
+self is first argument to object method because first argument is always object reference.

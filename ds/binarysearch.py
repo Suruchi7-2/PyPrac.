@@ -25,26 +25,39 @@ result==output
 #2.if it matches queried number return middle position as answer
 #3.if it less than queried number ,then search frst half of list
 #4.if it is greater than queried numebr theb search second half of list.
-def locate(cards,query):
-    lo=0 
-    hi=len(cards)-1
-    while(lo<=hi):
-        mid=hi+lo//2
-        if cards[mid]==query:
-            print("Query found at mid: ",mid)
-            return mid
-        if cards[mid]<query:
-            hi=mid-1
-        if cards[mid]>query:
-              lo=mid+1
-    return -1
-cards=[13,11,10,7,4,3,1]
-query=13
-result=locate(cards,query)
+def binary_search(arr, target):
+  low = 0
+  high = len(arr) - 1
+  while low <= high:
+    mid = (low + high) // 2
+    if arr[mid] == target:
+      return mid
+    elif arr[mid] < target:
+      high = mid-1
+    else:
+      low=mid+1
+  return -1
+
+# Example usage
+arr = [13,11,10,7,4,3,2,1,0]
+target = 2
+
+result = binary_search(arr, target)
+
 if result != -1:
-    print("Element found at :",result)
+  print(f"Element found at index: {result}")
 else:
-    print("ELement not found")
+  print("Element not found in the array")
 
 
 
+#Analyse time complexity for binary.
+  #So. INitial length of array: N
+  #on ist iteration: N/2
+  #iteration 2: N/4
+  #Iteration3:N/8 i.e. N/2^3
+  #iteartion l:N/2^K
+  #hence. final length of arrayis 1,we can calculate
+  #N/2^k=1
+  #N=2^K
+  #k=log Nhence binary search runs in O(log N)log refers to log to the base 2.

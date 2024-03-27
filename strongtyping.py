@@ -41,7 +41,7 @@ class Multi(Add):#Derived class.
         print("Multiplication: ",a*b)
 m=Multi()
 m.result(10,20)
-
+#operator overloading in complex number.
 class ComplexNumber:
     def __init__(self, real, imag):
         self.real = real

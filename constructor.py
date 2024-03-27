@@ -20,3 +20,4 @@ print(MObile.fp)
 #instance varaible are those whose separate copy is is created in every object.];
 #now focous for class variable which is defined and initialized outside constructor 
 #and it is accessing using its class method which should have decorator "@classmethod" and intialized value is accessed using clsvarible just like self as in constructor so always pass cls as aparameter in class method
+#Class variable are those whose single copy is passed toe ach variable and hence if modified inside ony instance it will afffect each copy.
