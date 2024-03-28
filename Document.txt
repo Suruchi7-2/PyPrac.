@@ -22,7 +22,7 @@ object will have memory location and it gets passed to self because self variabl
 use object to access class variabe and method.
 like: object.varname
 object.classmethod()
-
+#text filethis is
 Self is default variable and it will have memeory adress of current object.
 This variable is used to reefr all instance variable and method.
 self is first argument to object method because first argument is always object reference.

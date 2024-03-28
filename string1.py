@@ -77,3 +77,16 @@ print("remove all - available from rightsidestring: ",str.rstrip('.'))
 print("Smallest character: ",min(str2))
 print("LArgetst charafcter: ",max(str2))
 #.................
+s="sururchithakur"
+str="thakur"
+str1="kumari"
+mapped=s.maketrans(str,str1)#maketrans will just mapped character of string to another character defiend in argument
+print(s.translate(mapped))#translate will convert string charcater into mapped character.
+#......................
+#replace method replaces one string with another.
+str="sururhcithakur"
+print("replace str : ",str.replace("thakur","kumari"))
+#..........in keyword and not in .
+l=["surtuci","kumari",12,4]
+print("AVailable or not: ",12 in l)
+print("AVailable or not: ",1 not in l)

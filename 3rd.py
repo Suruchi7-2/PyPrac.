@@ -14,5 +14,5 @@ class Teacher:
         print("Teacher name is ",s.name)
         print("Teacher's roll is: ",s.roll)
 stu=Student("Suruchi",12)
-Teacher.display(stu)
+Teacher.display(stu)#comment
             

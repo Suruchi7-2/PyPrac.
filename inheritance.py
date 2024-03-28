@@ -25,7 +25,7 @@ S=Son()
 #class father:
 #class son(father):
 #class daughter(father)
-#Multiple Inheritance:
+#Multiple Inheritance: u know
 #class Father:
 #class Mother:
 #class son(Father,Mother)

@@ -9,4 +9,5 @@ print(colored_square.name)  # Output: Square
 print(colored_square.color)  # Output: red
 print(colored_square.area())  # Output: 25
 print(colored_square)  # Output: Colored Square with color red and area 25
+#commented 
 

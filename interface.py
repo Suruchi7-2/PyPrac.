@@ -20,3 +20,4 @@ c=Child()
 #2.We use abstract class when there are some common fferaures shared by all objects 
 #3.while in interface all the fearures need to be implemented differently for different objects.
 #4.Use interafce when yiu need to use api.
+#commented

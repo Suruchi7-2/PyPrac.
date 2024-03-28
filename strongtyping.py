@@ -72,3 +72,4 @@ class ComplexNumber:
             return ComplexNumber(self.real * other, self.imag * other)
         else:
             return NotImplemented
+#modifed

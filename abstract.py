@@ -12,6 +12,7 @@ class Child(Father):
 c=Child()
 c.disp()
 c.show()
+#comment
 #above is example of abstarct method 
 #Abstract method is one which is used wile we have parent an d child class. because abstqarct class will 
 #have abstract method whcuuh we have to defiine in child class in parent , only declaration is required for abstract method in parent.

@@ -9,7 +9,7 @@ class MObile:
     @classmethod
     def fpmethod(cls):
        return cls.fp
-
+#commented
 oppo =MObile("Oppo",800)#actual argument
 print(oppo.price)
 print(MObile.fp)

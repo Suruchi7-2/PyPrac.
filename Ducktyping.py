@@ -19,3 +19,4 @@ d=Duck()
 myfunction(d)
 h=Horse()#so this object deosn't bother a little bit about of whcih class it is.
 myfunction(h)
+# comment

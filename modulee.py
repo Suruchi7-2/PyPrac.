@@ -17,7 +17,7 @@ class Square(Shape):
 
     def area(self):
         return self.length * self.length
-
+#comment 
 class ColoredSquare(ColoredShape, Square):  # Inherits from both Shape and ColoredShape
     def __init__(self, length, color):
         super().__init__("Square", color)  # Call parent class constructor (ColoredShape)

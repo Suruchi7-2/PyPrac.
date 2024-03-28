@@ -12,7 +12,7 @@ class Animal:#Encapsulation is to encapsulate data memebr on is own. like privat
     @staticmethod 
     def description():#make it static method so only it can acces through class not by instance.
         return f"u r static method hence no need of self"
-    
+    #comment
 class Dog(Animal):
     def __init__(self,legs1,head1):
         super().__init__(legs1,head1,tail=2)
